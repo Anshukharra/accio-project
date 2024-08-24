@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 2em;
+            background-color: #f1c40f;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .logo {
+            font-weight: 600;
+            font-size: 1.5em;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5em;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        /* Intro Section */
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em;
+            margin-top: 1em;
+        }
+        .intro h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .intro p {
+            margin-bottom: 1em;
+            font-size: 1.2em;
+        }
+        .intro button {
+            background-color: #f1c40f;
+            border: none;
+            padding: 0.8em 1.5em;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .intro img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        /* Contact Us Section */
+        .contact {
+            padding: 2em;
+        }
+        .contact h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        .contact input, .contact button {
+            padding: 1em;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact input {
+            background-color: #444;
+            color: #fff;
+        }
+        .contact input:focus {
+            outline: none;
+        }
+        .contact button {
+            background-color: #f1c40f;
+            cursor: pointer;
+            color: #000;
+            font-weight: 600;
+        }
+        /* Table Section */
+        .table-section {
+            padding: 2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        th, td {
+            padding: 1em;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        tfoot {
+            background-color: #f1c40f;
+            color: #000;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Startup</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div>
+            <h1>Startup Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button>Login</button>
+        </div>
+        <img src="jeff bezos.jfif" alt="Jeff Bezos">
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Mobile Number">
+            <input type="text" placeholder="City">
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
+    <!-- Table Section -->
+    <section class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Startup Name</th>
+                    <th>Startup Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Startup</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sample Startup</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sample Startup</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Footer Information</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+</body>
+</html>
